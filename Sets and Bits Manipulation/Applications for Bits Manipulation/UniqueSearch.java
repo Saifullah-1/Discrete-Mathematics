@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
 
-public class Application1 {
-    public static int uniqueSearch1(int[] arr) {
+public class UniqueSearch {
+    public static int uniqueSearch(int[] arr) {
         int unique = arr[0];
         for (int i = 1; i < arr.length; i++) 
             unique ^= arr[i];
@@ -28,7 +28,7 @@ public class Application1 {
             int x = sc.nextInt();
             array[i] = x;
         }
-        System.out.println("Unique number is " + uniqueSearch1(array));
+        System.out.println("Unique number is " + uniqueSearch(array));
 //        System.out.print("Enter the number: ");
 //        int num = sc.nextInt();
 //        System.out.println("Number of 1's = " + onesCounter(num));
